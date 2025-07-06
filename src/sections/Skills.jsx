@@ -26,22 +26,27 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-[#0f0f0f] via-[#1a1a1a] to-[#111827] text-white font-poppins px-6 md:px-20 py-20">
+    <div className="min-h-screen bg-gradient-to-tr from-[#0f0f0f] via-[#1a1a1a] to-[#111827] text-white font-poppins px-4 sm:px-8 md:px-20 py-20">
       <FadeInSection>
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">My Technical Skills</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12">
+          My Technical Skills
+        </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 place-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 place-items-center">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="w-32 h-32 md:w-36 md:h-36 bg-white bg-opacity-5 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center shadow-lg hover:shadow-indigo-500/30 hover:scale-105 transition-all duration-300"
+              className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 bg-white/5 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center shadow-md hover:shadow-indigo-500/40 border border-white/10 hover:scale-105 transition-all duration-300"
+              aria-label={skill.name}
             >
               <img
                 src={skill.image}
                 alt={skill.name}
-                className="w-12 h-12 object-contain mb-2"
+                className="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-2"
               />
-              <span className="text-sm text-gray-200 text-center">{skill.name}</span>
+              <span className="text-xs sm:text-sm text-gray-200 text-center">
+                {skill.name}
+              </span>
             </div>
           ))}
         </div>
@@ -51,4 +56,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
 

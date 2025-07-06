@@ -7,6 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ✅ Prevent horizontal scroll globally */
+body {
+  overflow-x: hidden;
+}
+
+/* ✅ Custom waving hand animation */
 @keyframes wave {
   0% { transform: rotate(0deg); }
   15% { transform: rotate(14deg); }

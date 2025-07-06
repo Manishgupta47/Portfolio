@@ -24,7 +24,7 @@ const Contact = () => {
 
         <div className="flex flex-col md:flex-row gap-10 items-start justify-center">
 
-          {/* 🔵 Left - Image (Increased size) */}
+          
           <div className="w-full md:w-1/2 flex justify-center items-center">
             <img
               src="https://gr7800.github.io/assets/emailimg.png"
@@ -33,10 +33,9 @@ const Contact = () => {
             />
           </div>
 
-          {/* 🟣 Right - Form + Links */}
           <div className="w-full md:w-1/2 space-y-8">
 
-            {/* Contact Links */}
+         
             <div className="grid grid-cols-2 gap-4">
               {[
                 { icon: <FaGithub />, label: 'GitHub', href: 'https://github.com/Manishgupta47' },
@@ -57,7 +56,7 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Contact Form */}
+          
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"
@@ -105,7 +104,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Footer */}
+        
         <div className="text-center text-gray-500 text-sm mt-20 border-t border-gray-700 pt-6">
           Designed and built by <span className="text-indigo-400 font-medium">Manish Kumar Kasaudhan</span>
         </div>
