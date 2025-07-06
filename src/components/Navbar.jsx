@@ -15,10 +15,9 @@ const NavBar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-[#0f0f0f] via-[#1a1a1a] to-[#111827] text-white shadow-md rounded-b-2xl">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center font-poppins">
 
-          {/* Logo */}
+        
           <div className="text-2xl font-bold text-indigo-400">Manish</div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6 text-sm">
             {navLinks.map((link, idx) => (
               <FadeInSection delay={idx * 0.1} key={link}>
@@ -36,7 +35,7 @@ const NavBar = () => {
             ))}
           </div>
 
-          {/* Mobile Hamburger Icon */}
+         
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -48,7 +47,7 @@ const NavBar = () => {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu with Smooth Animation */}
+        
         <div
           className={`md:hidden absolute top-full right-4 bg-[#111827] z-40 w-fit overflow-hidden rounded-lg shadow-lg transition-all duration-500 ease-in-out ${
             menuOpen ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'

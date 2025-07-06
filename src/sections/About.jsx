@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-tr from-[#0f0f0f] via-[#1a1a1a] to-[#111827] text-white font-poppins px-4 sm:px-6 md:px-20 py-20 relative overflow-hidden">
       
-      {/* Radial Background Glow */}
+    
       <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-700 via-transparent to-transparent opacity-20"></div>
 
       <FadeInSection>
@@ -17,7 +17,6 @@ const About = () => {
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
 
-            {/* GIF Image */}
             <div className="w-full md:w-[40%]">
               <img
                 src="https://gr7800.github.io/assets/AboutImg.gif"
@@ -26,7 +25,7 @@ const About = () => {
               />
             </div>
 
-            {/* About Text */}
+          
             <div className="md:w-[60%] text-gray-300 text-sm sm:text-base leading-7 space-y-5">
               {[
                 "I'm Manish Kumar Kasaudhan, a passionate MERN Stack Developer focused on building modern, scalable web applications.",
