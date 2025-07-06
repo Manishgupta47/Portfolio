@@ -29,7 +29,7 @@ const About = () => {
             {/* About Text */}
             <div className="md:w-[60%] text-gray-300 text-sm sm:text-base leading-7 space-y-5">
               {[
-                "Passionate MERN Stack Developer focused on building modern, scalable web applications.",
+                "I'm Manish Kumar Kasaudhan, a passionate MERN Stack Developer focused on building modern, scalable web applications.",
                 "Currently working as a Website Developer Intern at Fuel It Online, Jaipur (Rajasthan), where I contribute to full-stack MERN projects.",
                 "Completed a 6-month MERN Stack training from KG Coding and frontend development course from EISystem.",
                 "With 1 year of experience, I specialize in clean, responsive UI and backend systems using React, Node.js, MongoDB, and Express."
@@ -48,3 +48,6 @@ const About = () => {
 };
 
 export default About;
+
+
+

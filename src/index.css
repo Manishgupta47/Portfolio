@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ✅ Smooth scroll behavior for entire site */
+
 html {
   scroll-behavior: smooth;
+}
+
+
+body {
+  overflow-x: hidden;
 }
 
 @keyframes wave {
@@ -22,5 +27,4 @@ html {
   animation: wave 2s infinite;
   transform-origin: 70% 70%;
 }
-
 

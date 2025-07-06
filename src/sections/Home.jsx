@@ -21,10 +21,9 @@ const Home = () => {
           </h2>
 
           {/* Full Name */}
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
-  Manish Kumar Kasaudhan
-</h1>
-
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight">
+            Manish Kumar Kasaudhan
+          </h1>
 
           {/* Typewriter Titles */}
           <TypeAnimation
@@ -89,3 +88,4 @@ const Home = () => {
 };
 
 export default Home;
+
